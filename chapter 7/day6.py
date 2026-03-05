@@ -94,7 +94,7 @@
 #     if (i == 1 or i ==n):
 #         print("*" * n , end="")
 #     else:
-#         print("*" , end="")
+        # print("*" , end="")  # end is used for avoiding new line in python
 #         print(" "* (n-2), end="")
 #         print("*" , end="")
 #     print("")

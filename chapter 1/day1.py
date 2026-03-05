@@ -34,7 +34,7 @@
 import os 
 
 # from where we are going to fetch the data
-directory_path = "/"
+directory_path = "/"  
 
 # make a list of the data
 content = os.listdir(directory_path)
