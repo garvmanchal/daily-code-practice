@@ -72,7 +72,31 @@
 # a.cube()
 # a.squareroot()
         
-class Demo :
-    a = 4 
+# class Demo :
+#     a = 4 
 
-o = Demo ()
+# o = Demo ()
+# print(o.a) #prints the class attribute because instance attribute is not present
+# o.a = 0 # instance attribute is set
+# print(o.a) # prints the instance attribute because instance attribute is present
+# print(Demo.a) # prints the class attribute
+
+
+from random import randint
+class Train :
+    def __init__(self , trainNo):
+        self.trainNo = trainNo
+
+    def book(self , fro, to):
+        print(f"ticket is booked in train no: {self.trainNo} FROM {fro} to {to}")
+
+    def getstatus(self ):
+        print(f"train no : {self.trainNo} is running on time")
+
+    def getFare(self, fro, to):
+        print(f"ticket fare in train no: {self.trainNo} FROM {fro} to {to} is {randint(222 , 5555)}")
+
+t = Train(12399)
+t.book("rampur" , "delhi")
+t.getstatus()
+t.getFare("rampur" , "delhi")
