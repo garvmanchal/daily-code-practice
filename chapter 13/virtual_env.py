@@ -1,0 +1,1 @@
+# pip freeze : this is a command which tell us how many lib are installed in our package
